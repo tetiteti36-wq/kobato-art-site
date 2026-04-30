@@ -257,6 +257,15 @@ img {
     font-size: 1.1rem;
 }
 
+.about-voice {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--clr-forest-green);
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
 /* Activities */
 .activities {
     background-color: var(--clr-bg-light);
