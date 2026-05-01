@@ -517,85 +517,112 @@ img {
     margin-bottom: 0;
 }
 
-/* Exhibition */
-.exhibition {
-    background: linear-gradient(135deg, var(--clr-forest-green), #1e4530);
-    color: white;
+/* Vision */
+.vision {
+    background: var(--clr-bg-light);
 }
 
-.exhibition .section-title {
-    color: white;
+.vision-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.8rem;
+    margin-bottom: 4rem;
 }
 
-.exhibition .section-title span {
-    color: var(--clr-accent-yellow);
+.vision-card {
+    background: var(--clr-bg-white);
+    border: 1px solid rgba(0,0,0,0.08);
+    padding: 2rem;
+    position: relative;
 }
 
-.exhibition-box {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: var(--br-lg);
-    padding: var(--space-lg);
+.vision-icon {
+    font-size: 1.8rem;
+    color: var(--clr-forest-green);
+    margin-bottom: 1rem;
+    opacity: 0.7;
 }
 
-.exhibition-lead {
-    text-align: center;
-    font-size: 1.2rem;
-    margin-bottom: var(--space-lg);
-}
-
-.exhibition-info {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 3rem;
-    margin-bottom: var(--space-lg);
-}
-
-.info-item {
+.vision-card h3 {
+    font-size: 1.1rem;
+    color: var(--clr-forest-green);
+    margin-bottom: 0.8rem;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.6rem;
+    flex-wrap: wrap;
 }
 
-.info-icon {
-    font-size: 2.5rem;
-    color: var(--clr-accent-yellow);
+.vision-tag {
+    font-size: 0.7rem;
+    font-family: var(--font-body);
+    font-weight: 400;
+    color: var(--clr-accent-orange);
+    border: 1px solid var(--clr-accent-orange);
+    padding: 0.1rem 0.5rem;
+    border-radius: 20px;
 }
 
-.info-item h4 {
-    color: var(--clr-soft-blue);
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 0.2rem;
+.vision-card p {
+    font-size: 0.95rem;
+    color: var(--clr-text-light);
+    line-height: 1.8;
 }
 
-.info-item p {
-    font-size: 1.1rem;
-    font-weight: 500;
-}
-
-.exhibition-vision {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 2rem;
-    border-radius: var(--br-md);
-}
-
-.exhibition-vision h3 {
-    color: var(--clr-accent-yellow);
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
+/* 助成金実績 */
+.grants {
+    background: var(--clr-bg-white);
+    border: 1px solid rgba(0,0,0,0.08);
+    padding: 3rem;
     text-align: center;
 }
 
-.exhibition-vision p {
-    margin-bottom: 1rem;
+.grants-title {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    color: var(--clr-forest-green);
+    margin-bottom: 0.6rem;
 }
 
-.exhibition-vision p:last-child {
-    margin-bottom: 0;
+.grants-desc {
+    font-size: 0.95rem;
+    color: var(--clr-text-light);
+    margin-bottom: 2rem;
+}
+
+.grants-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.grant-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.grant-year {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--clr-accent-orange);
+    letter-spacing: 0.05em;
+}
+
+.grant-name {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--clr-forest-green);
+    font-weight: 600;
+}
+
+.grants-message {
+    font-size: 1rem;
+    color: var(--clr-text-light);
+    font-style: italic;
 }
 
 .exhibition-vision strong {
