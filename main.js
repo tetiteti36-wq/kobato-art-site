@@ -21,6 +21,17 @@ hamburger.addEventListener('click', () => {
     alert('Mobile menu will be implemented here!');
 });
 
+// Story「もっと読む」トグル
+document.querySelectorAll('.story-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const body = btn.previousElementSibling;
+        const isExpanded = body.classList.toggle('expanded');
+        btn.innerHTML = isExpanded
+            ? '閉じる <span class="toggle-icon" style="transform:rotate(180deg)">▼</span>'
+            : 'もっと読む <span class="toggle-icon">▼</span>';
+    });
+});
+
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

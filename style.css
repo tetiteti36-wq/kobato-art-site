@@ -350,6 +350,91 @@ img {
     background: #fdfdfc;
 }
 
+/* story-header: タイトル＋画像を横並び */
+.story-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.2rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px dashed rgba(0,0,0,0.1);
+}
+
+.story-header h3 {
+    flex: 1;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.story-header-img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: var(--br-sm);
+    flex-shrink: 0;
+}
+
+/* フェードアウト＆展開 */
+.story-body {
+    position: relative;
+    max-height: 3.8rem;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.story-body::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2.5rem;
+    background: linear-gradient(transparent, #F9F7F5);
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.story-body--fullwidth::after {
+    background: linear-gradient(transparent, #fdfdfc);
+}
+
+.story-body.expanded {
+    max-height: 3000px;
+}
+
+.story-body.expanded::after {
+    opacity: 0;
+}
+
+/* もっと読むボタン */
+.story-toggle {
+    background: none;
+    border: none;
+    color: var(--clr-forest-green);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 0.6rem 0 0;
+    margin-top: 0.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.story-toggle:hover {
+    opacity: 1;
+}
+
+.toggle-icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    font-size: 0.75rem;
+}
+
 .story-card h3 {
     font-size: 1.6rem;
     color: var(--clr-forest-green);
