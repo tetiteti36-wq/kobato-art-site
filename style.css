@@ -337,12 +337,13 @@ img {
 }
 
 .story-card {
-    background: var(--clr-bg-light);
-    border-radius: var(--br-md);
-    padding: 2.5rem;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-    border-left: 4px solid var(--clr-accent-yellow);
+    background: var(--clr-bg-white);
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    border: 1px solid rgba(0,0,0,0.08);
     min-width: 0;
+    overflow: hidden;
 }
 
 .story-card.full-width {
@@ -371,31 +372,16 @@ img {
     color: rgba(255,255,255,0.8);
 }
 
-/* story-header: タイトル＋画像を横並び */
-.story-header {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 1.2rem;
-    margin-bottom: 1.2rem;
-    padding-bottom: 0.8rem;
-    border-bottom: 1px dashed rgba(0,0,0,0.1);
-}
-
-.story-header h3 {
-    flex: 1;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    border-bottom: none;
-}
-
-.story-header-img {
-    width: 45%;
-    max-width: 280px;
+/* 画像：カード上部に全幅 */
+.story-card-img {
+    width: 100%;
     aspect-ratio: 16 / 9;
     object-fit: cover;
-    border-radius: var(--br-sm);
-    flex-shrink: 0;
+    display: block;
+}
+
+.story-card-content {
+    padding: 1.8rem 2rem;
 }
 
 /* フェードアウト＆展開 */
@@ -413,7 +399,7 @@ img {
     left: 0;
     right: 0;
     height: 2.5rem;
-    background: linear-gradient(transparent, #F9F7F5);
+    background: linear-gradient(transparent, #ffffff);
     pointer-events: none;
     transition: opacity 0.3s ease;
 }
@@ -458,11 +444,12 @@ img {
 }
 
 .story-card h3 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: var(--clr-forest-green);
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.8rem;
-    border-bottom: 1px dashed rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .story-card h4 {
