@@ -342,6 +342,7 @@ img {
     padding: 2.5rem;
     box-shadow: 0 4px 15px rgba(0,0,0,0.03);
     border-left: 4px solid var(--clr-accent-yellow);
+    min-width: 0;
 }
 
 .story-card.full-width {
@@ -389,8 +390,9 @@ img {
 }
 
 .story-header-img {
-    width: 280px;
-    height: 160px;
+    width: 45%;
+    max-width: 280px;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
     border-radius: var(--br-sm);
     flex-shrink: 0;
