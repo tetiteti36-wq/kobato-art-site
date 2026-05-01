@@ -372,6 +372,24 @@ img {
     color: rgba(255,255,255,0.8);
 }
 
+/* 講師紹介 見出し */
+.instructor-heading {
+    text-align: center;
+    margin: 3rem 0 2rem;
+}
+
+.instructor-heading h3 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--clr-forest-green);
+    margin-bottom: 0.6rem;
+}
+
+.instructor-heading p {
+    font-size: 1rem;
+    color: var(--clr-text-light);
+}
+
 /* コンセプト文 */
 .stories-concept {
     text-align: center;
