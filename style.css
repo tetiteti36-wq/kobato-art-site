@@ -372,6 +372,37 @@ img {
     color: rgba(255,255,255,0.8);
 }
 
+/* コンセプト文 */
+.stories-concept {
+    text-align: center;
+    padding: 3.5rem 2rem;
+    margin: 2rem 0;
+    position: relative;
+}
+
+.stories-concept::before,
+.stories-concept::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: var(--clr-forest-green);
+    margin: 0 auto;
+    opacity: 0.4;
+}
+
+.stories-concept::before { margin-bottom: 2rem; }
+.stories-concept::after  { margin-top: 2rem; }
+
+.stories-concept p {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    font-weight: 500;
+    color: var(--clr-forest-green);
+    line-height: 2;
+    letter-spacing: 0.05em;
+}
+
 /* 画像：カード上部に全幅 */
 .story-card-img {
     width: 100%;
