@@ -396,10 +396,10 @@ img {
 
 .stories-concept p {
     font-family: var(--font-heading);
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--clr-forest-green);
-    line-height: 2.2;
+    line-height: 2;
     letter-spacing: 0.08em;
 }
 
