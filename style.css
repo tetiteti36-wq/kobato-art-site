@@ -522,107 +522,123 @@ img {
     background: var(--clr-bg-light);
 }
 
+/* 構想中の物語 見出し */
+.vision-subtitle-block {
+    margin: 0 0 1.5rem;
+}
+
+.vision-subtitle {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    color: var(--clr-forest-green);
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid var(--clr-forest-green);
+    display: inline-block;
+}
+
+/* ビジョンカード：横4列 */
 .vision-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.8rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
     margin-bottom: 4rem;
 }
 
 .vision-card {
     background: var(--clr-bg-white);
     border: 1px solid rgba(0,0,0,0.08);
-    padding: 2rem;
-    position: relative;
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .vision-icon {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: var(--clr-forest-green);
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     opacity: 0.7;
 }
 
 .vision-card h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--clr-forest-green);
     margin-bottom: 0.8rem;
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    flex-wrap: wrap;
+    line-height: 1.5;
 }
 
-.vision-tag {
-    font-size: 0.7rem;
-    font-family: var(--font-body);
-    font-weight: 400;
-    color: var(--clr-accent-orange);
-    border: 1px solid var(--clr-accent-orange);
-    padding: 0.1rem 0.5rem;
-    border-radius: 20px;
+.vision-card .story-body::after {
+    background: linear-gradient(transparent, #ffffff);
 }
 
-.vision-card p {
-    font-size: 0.95rem;
+.vision-card .story-text p,
+.vision-card .story-body > p {
+    font-size: 0.9rem;
     color: var(--clr-text-light);
     line-height: 1.8;
 }
 
-/* 助成金実績 */
+/* 助成実績 */
 .grants {
     background: var(--clr-bg-white);
     border: 1px solid rgba(0,0,0,0.08);
-    padding: 3rem;
+    padding: 3.5rem;
     text-align: center;
 }
 
 .grants-title {
     font-family: var(--font-heading);
-    font-size: 1.4rem;
+    font-size: 2rem;
     color: var(--clr-forest-green);
-    margin-bottom: 0.6rem;
+    margin-bottom: 2.5rem;
 }
 
-.grants-desc {
-    font-size: 0.95rem;
-    color: var(--clr-text-light);
-    margin-bottom: 2rem;
+.grants-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
 }
 
-.grants-list {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
-}
-
-.grant-item {
+.grant-card {
+    border: 1px solid rgba(0,0,0,0.08);
+    padding: 2rem 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.4rem;
+    gap: 0.6rem;
 }
 
 .grant-year {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-weight: 700;
     color: var(--clr-accent-orange);
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
 }
 
 .grant-name {
     font-family: var(--font-heading);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: var(--clr-forest-green);
     font-weight: 600;
 }
 
-.grants-message {
-    font-size: 1rem;
+.grant-link {
+    font-size: 0.8rem;
     color: var(--clr-text-light);
-    font-style: italic;
+    text-decoration: none;
+    margin-top: 0.4rem;
+    transition: color 0.2s;
+}
+
+.grant-link:hover {
+    color: var(--clr-forest-green);
+}
+
+.grants-message {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    color: var(--clr-forest-green);
+    line-height: 2;
 }
 
 .exhibition-vision strong {
