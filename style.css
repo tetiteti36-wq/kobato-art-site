@@ -395,12 +395,12 @@ img {
 .stories-concept::after  { margin-top: 2rem; }
 
 .stories-concept p {
-    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: var(--font-heading);
     font-size: 1.6rem;
-    font-weight: 300;
+    font-weight: 700;
     color: var(--clr-forest-green);
     line-height: 2.2;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
 }
 
 /* 画像：カード上部に全幅 */
