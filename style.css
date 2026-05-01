@@ -145,14 +145,24 @@ img {
 .logo {
     display: flex;
     flex-direction: column;
-    font-size: 1.5rem;
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
     color: var(--clr-forest-green);
+    line-height: 1.2;
+}
+
+.logo a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .logo-sub {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-family: var(--font-body);
+    font-weight: 400;
     color: var(--clr-text-light);
+    margin-top: 0.2rem;
 }
 
 .nav-list {
