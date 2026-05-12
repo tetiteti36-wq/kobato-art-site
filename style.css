@@ -439,10 +439,11 @@ img {
     display: block;
 }
 
-/* 講師写真：縦長なので顔が上に来るよう調整 */
+/* 講師写真：全体を見せる（クロップなし） */
 .instructor-img {
-    aspect-ratio: 1 / 1;
-    object-position: top center;
+    aspect-ratio: 3 / 4;
+    object-fit: contain;
+    background-color: #f5f3ef;
 }
 
 .story-card-content {
