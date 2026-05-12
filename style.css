@@ -209,7 +209,7 @@ img {
 .hero {
     height: 100vh;
     min-height: 600px;
-    background: linear-gradient(rgba(44, 30, 20, 0.4), rgba(44, 30, 20, 0.2)), url('img/hero-bg.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(44, 30, 20, 0.4), rgba(44, 30, 20, 0.2)), url('img/art/hero-bg.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -315,23 +315,23 @@ img {
 }
 
 .mock-img-1 {
-    background-image: url('img/activity-1.jpg');
+    background-image: url('img/activity/activity-1.jpg');
 }
 
 .mock-img-2 {
-    background-image: url('img/activity-2.jpg');
+    background-image: url('img/activity/activity-2.jpg');
 }
 
 .mock-img-3 {
-    background-image: url('img/activity-3.jpg');
+    background-image: url('img/activity/activity-3.jpg');
 }
 
 .mock-img-4 {
-    background-image: url('img/activity-4.jpg');
+    background-image: url('img/activity/activity-4.jpg');
 }
 
 .mock-img-5 {
-    background-image: url('img/activity-5.jpg');
+    background-image: url('img/activity/activity-5.jpg');
 }
 
 /* Stories Section */
