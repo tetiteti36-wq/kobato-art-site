@@ -439,6 +439,12 @@ img {
     display: block;
 }
 
+/* 講師写真：縦長なので顔が上に来るよう調整 */
+.instructor-heading ~ .story-grid .story-card-img {
+    aspect-ratio: 4 / 3;
+    object-position: top;
+}
+
 .story-card-content {
     padding: 1.8rem 2rem;
 }
