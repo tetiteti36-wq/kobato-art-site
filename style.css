@@ -280,6 +280,35 @@ img {
 .activities {
     background-color: var(--clr-bg-light);
     position: relative;
+    overflow: hidden;
+}
+
+.deco-art {
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+    mix-blend-mode: multiply;
+}
+
+.deco-te {
+    width: 130px;
+    top: 72px;
+    right: calc(50% + 120px);
+    transform: rotate(-10deg);
+}
+
+.deco-neco {
+    width: 110px;
+    top: 30px;
+    left: calc(50% + 160px);
+    transform: rotate(8deg);
+}
+
+.deco-mican {
+    width: 100px;
+    top: 150px;
+    left: calc(50% + 105px);
+    transform: rotate(-5deg);
 }
 
 .section-desc {
@@ -332,6 +361,10 @@ img {
 
 .mock-img-5 {
     background-image: url('img/activity/activity-5.jpg');
+}
+
+.mock-img-6 {
+    background-image: url('img/activity/activity-6.jpg');
 }
 
 /* Stories Section */
@@ -439,10 +472,10 @@ img {
     display: block;
 }
 
-/* 講師写真：全体を見せる（クロップなし） */
+/* 講師写真：横長 */
 .instructor-img {
-    aspect-ratio: 3 / 4;
-    object-fit: contain;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
     background-color: #f5f3ef;
 }
 
