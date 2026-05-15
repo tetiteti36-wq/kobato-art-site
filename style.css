@@ -816,7 +816,6 @@ img {
 @media (max-width: 768px) {
     .nav {
         display: none;
-        /* simple mobile menu hidden for now */
     }
 
     .hamburger {
@@ -827,5 +826,17 @@ img {
         flex-direction: column;
         gap: 1.5rem;
         align-items: flex-start;
+    }
+
+    .story-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .vision-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grants-grid {
+        grid-template-columns: 1fr;
     }
 }
