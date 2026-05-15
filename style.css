@@ -859,10 +859,19 @@ img {
         left: calc(50% + 85px);
     }
 
+    .section-desc,
+    .instructor-heading p,
+    .grants-title,
+    .grants-message,
+    .contact-area p,
+    .support-card p,
+    .support-card h3 {
+        text-align: left;
+    }
+
     .activities .section-desc,
     .vision .section-desc {
         white-space: normal;
-        text-align: left;
     }
 
     .sp-br {
