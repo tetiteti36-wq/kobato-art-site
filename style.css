@@ -337,8 +337,9 @@ img {
     font-size: 1.1rem;
 }
 
-.activities .section-desc {
-    max-width: 800px;
+.activities .section-desc,
+.vision .section-desc {
+    max-width: 900px;
     white-space: nowrap;
 }
 
@@ -858,8 +859,10 @@ img {
         left: calc(50% + 55px);
     }
 
-    .activities .section-desc {
+    .activities .section-desc,
+    .vision .section-desc {
         white-space: normal;
+        text-align: left;
     }
 
     .sp-br {
