@@ -315,19 +315,19 @@ img {
 .deco-te {
     width: 130px;
     top: 72px;
-    right: calc(50% + 120px);
+    right: calc(50% + 50px);
 }
 
 .deco-neco {
     width: 110px;
     top: 30px;
-    left: calc(50% + 160px);
+    left: calc(50% + 80px);
 }
 
 .deco-mican {
     width: 100px;
     top: 150px;
-    left: calc(50% + 105px);
+    left: calc(50% + 65px);
 }
 
 .section-desc {
