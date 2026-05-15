@@ -337,6 +337,11 @@ img {
     font-size: 1.1rem;
 }
 
+.activities .section-desc {
+    max-width: 800px;
+    white-space: nowrap;
+}
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -849,6 +854,10 @@ img {
 
     .deco-neco {
         left: calc(50% + 55px);
+    }
+
+    .activities .section-desc {
+        white-space: normal;
     }
 
     .hero-kuten {
