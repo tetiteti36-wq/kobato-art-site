@@ -315,7 +315,7 @@ img {
 .deco-te {
     width: 130px;
     top: 72px;
-    right: calc(50% + 50px);
+    right: calc(50% + 100px);
 }
 
 .deco-neco {
