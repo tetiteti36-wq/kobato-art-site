@@ -716,6 +716,7 @@ img {
     font-size: 1.15rem;
     color: var(--clr-forest-green);
     line-height: 2;
+    white-space: nowrap;
 }
 
 .exhibition-vision strong {
@@ -724,6 +725,13 @@ img {
 }
 
 /* Support */
+.support .section-desc,
+.support-card h3,
+.support-card p,
+.contact-area p {
+    text-align: left;
+}
+
 .support {
     background-color: var(--clr-soft-blue);
     /* using a very light tint */
