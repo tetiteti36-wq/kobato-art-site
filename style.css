@@ -223,7 +223,7 @@ img {
     content: '';
     position: absolute;
     inset: 0;
-    background: #1a0c06 url('img/art/hero-bg.jpg') center 35%/cover no-repeat;
+    background: #1a0c06 url('img/art/hero-bg.jpg') center 20%/cover no-repeat;
     z-index: 0;
 }
 
