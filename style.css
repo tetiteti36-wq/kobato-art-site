@@ -877,6 +877,29 @@ img {
         font-size: 1.8rem;
     }
 
+    .grants {
+        padding: 2rem 1rem;
+    }
+
+    .grant-card {
+        padding: 1.2rem 1rem;
+        align-items: flex-start;
+    }
+
+    .grants-title {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .grant-name {
+        font-size: 0.9rem;
+    }
+
+    .grants-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
     .activities .section-desc,
     .vision .section-desc {
         white-space: normal;
