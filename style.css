@@ -865,8 +865,16 @@ img {
     .grants-message,
     .contact-area p,
     .support-card p,
-    .support-card h3 {
+    .support-card h3,
+    .grant-card,
+    .grant-name,
+    .grant-year,
+    .grant-link {
         text-align: left;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
     }
 
     .activities .section-desc,
