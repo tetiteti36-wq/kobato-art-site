@@ -209,7 +209,8 @@ img {
 .hero {
     height: 100vh;
     min-height: 600px;
-    background: linear-gradient(rgba(44, 30, 20, 0.4), rgba(44, 30, 20, 0.2)), url('img/art/hero-bg.jpg') center 30%/140% auto no-repeat;
+    position: relative;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -218,9 +219,28 @@ img {
     padding-top: 80px;
 }
 
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: -8%;
+    background: url('img/art/hero-bg.jpg') center 35%/118% auto no-repeat;
+    transform: rotate(1.2deg);
+    z-index: 0;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(44, 30, 20, 0.4), rgba(44, 30, 20, 0.2));
+    z-index: 1;
+}
+
 .hero-content {
     max-width: 800px;
     padding: 3rem;
+    position: relative;
+    z-index: 2;
     background: rgba(44, 30, 20, 0.5);
     /* warm, dark, translucent box */
     backdrop-filter: blur(4px);
