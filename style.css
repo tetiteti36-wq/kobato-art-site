@@ -828,6 +828,14 @@ img {
         align-items: flex-start;
     }
 
+    .hero-kuten {
+        display: none;
+    }
+
+    .hero-br {
+        display: none;
+    }
+
     .story-grid {
         grid-template-columns: 1fr;
     }
