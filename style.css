@@ -283,32 +283,51 @@ img {
     overflow: hidden;
 }
 
+@keyframes bounce {
+    0%, 100% { transform-origin: center bottom; transform: translateY(0) rotate(var(--rot)); }
+    40%       { transform-origin: center bottom; transform: translateY(-18px) rotate(var(--rot)); }
+    60%       { transform-origin: center bottom; transform: translateY(-10px) rotate(var(--rot)); }
+}
+
 .deco-art {
     position: absolute;
     pointer-events: none;
     user-select: none;
     mix-blend-mode: multiply;
+    animation: bounce 2.4s ease-in-out infinite;
+}
+
+.deco-te {
+    --rot: -10deg;
+    animation-delay: 0s;
+}
+
+.deco-neco {
+    --rot: 8deg;
+    animation-delay: 0.6s;
+}
+
+.deco-mican {
+    --rot: -5deg;
+    animation-delay: 1.2s;
 }
 
 .deco-te {
     width: 130px;
     top: 72px;
     right: calc(50% + 120px);
-    transform: rotate(-10deg);
 }
 
 .deco-neco {
     width: 110px;
     top: 30px;
     left: calc(50% + 160px);
-    transform: rotate(8deg);
 }
 
 .deco-mican {
     width: 100px;
     top: 150px;
     left: calc(50% + 105px);
-    transform: rotate(-5deg);
 }
 
 .section-desc {
