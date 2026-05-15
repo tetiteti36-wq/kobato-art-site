@@ -222,9 +222,8 @@ img {
 .hero::before {
     content: '';
     position: absolute;
-    inset: -8%;
+    inset: 0;
     background: #1a0c06 url('img/art/hero-bg.jpg') center 35%/cover no-repeat;
-    transform: rotate(1.2deg);
     z-index: 0;
 }
 
