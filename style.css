@@ -847,6 +847,10 @@ img {
         align-items: flex-start;
     }
 
+    .deco-neco {
+        left: calc(50% + 55px);
+    }
+
     .hero-kuten {
         display: none;
     }
