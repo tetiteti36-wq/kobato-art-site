@@ -479,6 +479,8 @@ img {
 .stories-concept::before { margin-bottom: 2rem; }
 .stories-concept::after  { margin-top: 2rem; }
 
+.sp-br { display: none; }
+
 .stories-concept p {
     font-family: var(--font-heading);
     font-size: 2rem;
@@ -858,6 +860,10 @@ img {
 
     .activities .section-desc {
         white-space: normal;
+    }
+
+    .sp-br {
+        display: block;
     }
 
     .hero-kuten {
