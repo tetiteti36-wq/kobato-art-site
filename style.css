@@ -209,7 +209,7 @@ img {
 .hero {
     height: 100vh;
     min-height: 600px;
-    background: linear-gradient(rgba(44, 30, 20, 0.4), rgba(44, 30, 20, 0.2)), url('img/art/hero-bg.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(44, 30, 20, 0.4), rgba(44, 30, 20, 0.2)), url('img/art/hero-bg.jpg') center 30%/140% auto no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
