@@ -617,6 +617,16 @@ img {
     margin-bottom: 0;
 }
 
+/* 感想の署名 */
+.story-attr {
+    font-size: 0.85rem;
+    color: var(--clr-text-light);
+    text-align: right;
+    margin-top: -0.6rem;
+    margin-bottom: 1.8rem;
+    font-style: italic;
+}
+
 /* Vision */
 .vision {
     background: var(--clr-bg-light);
