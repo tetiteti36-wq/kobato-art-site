@@ -617,6 +617,11 @@ img {
     margin-bottom: 0;
 }
 
+/* 感想カードなど：もっと読むボタンを下げる */
+.story-body--tall {
+    max-height: 16rem;
+}
+
 /* 感想の署名 */
 .story-attr {
     font-size: 0.85rem;
