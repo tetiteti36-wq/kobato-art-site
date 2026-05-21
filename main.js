@@ -42,8 +42,18 @@ function closeLightbox() {
     document.body.style.overflow = '';
 }
 
+// story-card の画像
 document.querySelectorAll('.story-card-img').forEach(img => {
     img.addEventListener('click', () => openLightbox(img.src, img.alt));
+});
+
+// 活動の様子ギャラリー（background-image から URL を取り出す）
+document.querySelectorAll('.image-placeholder').forEach(div => {
+    const bg = getComputedStyle(div).backgroundImage;
+    const match = bg.match(/url\(["']?(.+?)["']?\)/);
+    if (!match) return;
+    div.style.cursor = 'zoom-in';
+    div.addEventListener('click', () => openLightbox(match[1]));
 });
 
 overlay.addEventListener('click', (e) => {
