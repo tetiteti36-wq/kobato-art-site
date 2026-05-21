@@ -617,6 +617,63 @@ img {
     margin-bottom: 0;
 }
 
+/* ライトボックス */
+.lightbox-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.92);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    cursor: zoom-out;
+    animation: lb-fade-in 0.2s ease;
+}
+
+.lightbox-overlay.active {
+    display: flex;
+}
+
+.lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: var(--br-sm);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
+    animation: lb-zoom-in 0.25s ease;
+    cursor: default;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.lightbox-close:hover {
+    color: #fff;
+}
+
+@keyframes lb-fade-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes lb-zoom-in {
+    from { transform: scale(0.9); opacity: 0; }
+    to   { transform: scale(1);   opacity: 1; }
+}
+
+/* カード画像にズームカーソル */
+.story-card-img {
+    cursor: zoom-in;
+}
+
 /* 感想カードなど：もっと読むボタンを下げる */
 .story-body--tall {
     max-height: 16rem;

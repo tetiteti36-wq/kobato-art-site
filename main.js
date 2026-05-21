@@ -21,6 +21,41 @@ hamburger.addEventListener('click', () => {
     alert('Mobile menu will be implemented here!');
 });
 
+// ライトボックス
+const overlay = document.createElement('div');
+overlay.className = 'lightbox-overlay';
+overlay.innerHTML = '<span class="lightbox-close">&times;</span><img>';
+document.body.appendChild(overlay);
+
+const lbImg = overlay.querySelector('img');
+const lbClose = overlay.querySelector('.lightbox-close');
+
+function openLightbox(src, alt) {
+    lbImg.src = src;
+    lbImg.alt = alt || '';
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+document.querySelectorAll('.story-card-img').forEach(img => {
+    img.addEventListener('click', () => openLightbox(img.src, img.alt));
+});
+
+overlay.addEventListener('click', (e) => {
+    if (e.target !== lbImg) closeLightbox();
+});
+
+lbClose.addEventListener('click', closeLightbox);
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+});
+
 // Story「もっと読む」トグル
 document.querySelectorAll('.story-toggle').forEach(btn => {
     btn.addEventListener('click', () => {
