@@ -824,7 +824,7 @@ img {
 
 .grant-preview-img {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 4 / 3;
     object-fit: cover;
     object-position: top;
     display: block;
