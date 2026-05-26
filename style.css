@@ -824,10 +824,12 @@ img {
 
 .grant-preview-img {
     width: 100%;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
     object-position: top;
     display: block;
+    transform: scale(1.4);
+    transform-origin: top center;
 }
 
 /* サイトなし表示 */
@@ -842,7 +844,8 @@ img {
     font-size: 1.15rem;
     color: var(--clr-forest-green);
     line-height: 2;
-    white-space: nowrap;
+    white-space: normal;
+    overflow-wrap: break-word;
 }
 
 .exhibition-vision strong {
