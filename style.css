@@ -835,6 +835,15 @@ img {
     font-size: 1.3rem;
     color: var(--clr-forest-green);
     font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.grant-name-sub {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--clr-text-light);
+    letter-spacing: 0.02em;
 }
 
 .grant-comment {
