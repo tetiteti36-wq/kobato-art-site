@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tetiteti36-wq.github.io/kobato-art-site/sitemap.xml
